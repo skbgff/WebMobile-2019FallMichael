@@ -1,0 +1,40 @@
+.grid{
+    display: grid;
+    grid-template-columns: 75px 75px 75px;
+    grid-auto-rows: 75px 75px 75px;
+    margin-left: 45%;
+    margin-right: 55%;
+    margin-top: 20%;
+}
+
+.grid > div{
+    width: 70px;
+    height: 70px;
+}
+.square1{
+    background: #31b0d5;
+}
+.square2{
+    background: #2b542c;
+}
+.square3{
+    background: #843534;
+}
+.square4{
+    background: #b2dba1;
+}
+.square5{
+    background: #2aabd2;
+}
+.square6{
+    background: #2ecc71;
+}
+.square7{
+    background: #f0ad4e;
+}
+.square8{
+    background: #ffff00;
+}
+.square9{
+    background: #d9534f;
+}

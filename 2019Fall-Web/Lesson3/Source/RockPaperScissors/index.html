@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+
+    <title>Rock, Paper, Scissors</title>
+
+</head>
+<body>
+
+<h1>Rock, Paper, Scissors Game</h1>
+
+<div class="game">
+
+    <script>
+        // User choice
+        var YourChoice = prompt("Pick between rock, paper or scissors (all lowercase)");
+        if (! YourChoice) {
+            // YourChoice was undefined
+            document.write("<p>Input is unclear, please refresh and try again.</p>");
+        } else {
+            // Display user choice
+            document.write("<p>You chose:" + " " + YourChoice + "</p>");
+        }
+        // Ai choice
+        var AIchoice = Math.random();
+        if (AIchoice  < 0.34) {
+            AIchoice  = "rock";
+        } else if(AIchoice  <= 0.67) {
+            AIchoice  = "paper";
+        } else {
+            AIchoice  = "scissors";
+        }
+        // Shows AI choice
+        document.write("<p>AI chose:" + " " + AIchoice  + "</p>");
+        // compare choices
+        var compare = function(Player,Computer) {
+            if (Player === Computer) {
+                return "It's a tie!";
+            }
+            if (Player === "rock") {
+                if (Computer === "scissors") {
+                    // rock wins
+                    return "Congrats you win!";
+                } else {
+                    // paper wins
+                    return "Sorry you lost! Please try again by refreshing the page.";
+                }
+            }
+            if (Player === "paper") {
+                if (Computer === "rock") {
+                    return "Congrats you win!!";
+                } else {
+                    return "Sorry you lost! Please try again by refreshing the page.";
+                }
+            }
+            if (Player === "scissors") {
+                if (Computer === "rock") {
+                    // rock wins
+                    return "Sorry you lost! Please try again by refreshing the page.";
+                } else {
+                    // scissors wins
+                    return "Congrats you win!!";
+                }
+            }
+        };
+        // Run the compare function
+        var results = compare(YourChoice,AIchoice );
+        // Display results
+        document.write("<br><hr><br>" + results);
+    </script>
+
+</div>
+
+</body>
+</html>
