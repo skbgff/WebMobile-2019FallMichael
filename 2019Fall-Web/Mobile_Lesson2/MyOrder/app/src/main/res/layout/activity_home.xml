@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/orderSummaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Summary"
+        android:textColor="#4CAF50"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/dearUserText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026" />
+
+    <TextView
+        android:id="@+id/dearUserText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="20dp"
+        android:text="Dear user"
+        android:textColor="#4CAF50"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/summaryText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/summaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="Summary"
+        android:textColor="#4CAF50"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/Pizza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.227"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/Pizza"
+        android:layout_width="122dp"
+        android:layout_height="122dp"
+        android:layout_marginBottom="32dp"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toTopOf="@+id/goToOrderButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.408"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/pizzaicon" />
+
+    <Button
+        android:id="@+id/goToOrderButton"
+        android:layout_width="112dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="68dp"
+        android:background="#4CAF50"
+        android:onClick="goToOrder"
+        android:text="Go to order"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>
