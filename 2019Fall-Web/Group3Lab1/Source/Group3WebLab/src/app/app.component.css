@@ -1,0 +1,29 @@
+.mainNav{
+  background-color: #0028d6;
+}
+.topNav{
+  color: white;
+  font-size: 16px;
+}
+
+.col-lg-1{
+  float:left;
+}
+
+#studentsWorld{
+  background-color: aqua;
+  font-size: 32px;
+  color: white;
+}
+#mainStudents{
+  background-color: #0f79d6;
+  color: white;
+  font-size: 12px;
+}
+.leftNav{
+  background-color: #0f79d6;
+}
+.topLeftNav{
+  color: white;
+  font-size: 20px;
+}

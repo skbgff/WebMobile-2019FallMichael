@@ -1,0 +1,21 @@
+<body>
+<div class=container>
+  <div class=row>
+    <div class=col-lg-12>
+      <h2>Login Page</h2>
+      <form (submit)="login()">
+        <span class=login>
+          <p>Enter your email address here</p>
+          <input [(ngModel)]="credentials.studentEmail" class=login name=studentEmail type=studentEmail>
+        </span>
+        <span class=login>
+          <p>Enter your password here</p>
+          <input [(ngModel)]="credentials.studentPassword" class=login name=studentPassword type=studentPassword>
+        </span>
+        <button class=loginButton type=submit>Click here to login</button>
+      </form>
+    </div>
+  </div>
+
+</div>
+</body>

@@ -1,0 +1,41 @@
+<body>
+<div class=container>
+  <div class=row>
+    <div class=col-lg-12>
+
+      <h2>Add New Course</h2>
+
+      <form (ngSubmit)=courseConfirm()>
+
+        <button class=createButtonClass type=submit>Add Course</button>
+
+        <span class=createCourse>
+          <p>Course Name</p>
+          <input [(ngModel)]=newCourse.name class=createCourse name=courseName type=courseName>
+        </span>
+
+        <div>
+          <span class=createCourse>
+            <p>Time of Course</p>
+            <input [(ngModel)]=newCourse.time class=createCourse name=time type=time>
+          </span>
+
+          <span class=createCourse>
+            <p>About The Course</p>
+            <input [(ngModel)]=newCourse.desc class=createCourse name=desc type=desc>
+          </span>
+
+          <span class=createCourse>
+          <p>Course Department</p>
+          <input [(ngModel)]=newCourse.dept class=createCourse name=dept type=dept>
+        </span>
+          <span class=createCourse>
+          <p>Instructors for the Course</p>
+          <input [(ngModel)]=newCourse.instructors class=createCourse name=instructors type=instructors>
+        </span>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</body>

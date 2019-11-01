@@ -1,0 +1,28 @@
+<div class=container>
+  <div class=row>
+    <div class=col-lg-5>
+      <h1>Update Your Information</h1>
+      <div class=infoUpdate>
+
+        <span class=info>
+          <p>Your Email Address: </p>
+          <p>{{ information?.studentEmail }}</p>
+        </span>
+
+        <form (submit)="updateInfo(information.studentID, information)">
+          <span class=info>
+            <p>Your Full Name</p>
+            <input [(ngModel)]="information.studentName" class=info name=studentName placeholder="{{information?.studentName}}"
+                   type=studentName>
+            <br>
+            <button class=updateInfoButton type=submit>Click here to update your information</button>
+            </span>
+        </form>
+
+
+      </div>
+
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<body>
+<div class=container>
+  <ul class=courseList>
+    <div class=row>
+      <li *ngFor="let course of courses" class=courseListItem>
+        <div class="courses">
+          <i>Course Name: {{course.name}}</i>
+          <i>Course Time: {{course.time}}</i>
+          <i>Course Teacher: {{course.instructors}}</i>
+          <i>Course Number: {{course.num}}</i>
+          <i>Course Description: {{course.desc}}</i>
+        </div>
+      </li>
+    </div>
+  </ul>
+</div>
+</body>

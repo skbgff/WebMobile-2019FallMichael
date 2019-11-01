@@ -1,0 +1,8 @@
+.courseList{
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+}
+.courses{
+  font-size: 16px;
+}

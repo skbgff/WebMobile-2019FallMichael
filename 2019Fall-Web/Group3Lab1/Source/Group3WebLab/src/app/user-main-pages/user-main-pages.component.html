@@ -1,0 +1,14 @@
+<div class=container>
+  <ul>
+    <div class=row>
+      <li *ngFor="let student of students">
+        <div class=col-lg-5>
+            <i>Student Name: {{student.name}}</i>
+            <i>Student ID: {{student.studentID}}</i>
+            <i>Student Phone Number: {{student.studentPhone}}</i>
+            <i>Student Email: {{student.studentEmail}}</i>
+          </div>
+      </li>
+    </div>
+  </ul>
+</div>

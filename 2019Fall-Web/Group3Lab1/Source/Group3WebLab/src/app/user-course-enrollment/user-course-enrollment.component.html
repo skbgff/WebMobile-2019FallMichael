@@ -1,0 +1,55 @@
+<div class=container>
+  <div>
+    <h2>Courses that you are enrolled in</h2>
+    <ul *ngFor="let CourseTaken of accountCourses" class=courses>
+      <div class=row>
+        <li class=courseItem>
+          <div class=col-lg-5>
+            <form (submit)="dropCourse(CourseTaken.courseID)">
+              <button type=submit>Remove this course</button>
+            </form>
+            <div class=courseInfo>
+              <p>{{CourseTaken.name}}</p>>
+              <br>
+              <p>{{CourseTaken.time}}</p>
+              <br>
+              <p>{{CourseTaken.desc}}</p>
+              <br>
+              <p>{{CourseTaken.dept}}</p>
+              <br>
+              <p>{{CourseTaken.instructors}}</p>
+              <br>
+            </div>
+          </div>
+        </li>
+      </div>
+    </ul>
+  </div>
+
+  <div>
+    <h2>All Other Courses</h2>
+    <ul *ngFor="let notEnrolledCourses of notEnrolledCourses" class=courses>
+      <div class=row>
+        <li class=courseItem>
+          <div class=col-lg-5>
+            <form (submit)="enrollCourse(notEnrolledCourses.courseID)">
+              <button class="btn btn-primary col-sm-3 col-md-3 col-lg-3" type="submit">Enroll Class</button>
+            </form>
+            <div class=courseInfo>
+              <p>{{notEnrolledCourses.name}}</p>
+              <br>
+              <p>{{notEnrolledCourses.time}}</p>
+              <br>
+              <p>{{notEnrolledCourses.desc}}</p>
+              <br>
+              <p>{{notEnrolledCourses.dept}}</p>
+              <br>
+              <p>{{notEnrolledCourses.instructors}}</p>
+              <br>
+            </div>
+          </div>
+        </li>
+      </div>
+    </ul>
+  </div>
+</div>

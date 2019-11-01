@@ -1,0 +1,27 @@
+<body>
+<div class=container>
+  <ul class=mainNav>
+    <li *ngIf=!auth.LoggedIn()><a class=topNav routerLink=/user-access>Student Login</a></li>
+    <li *ngIf=auth.LoggedIn()><a class=topNav routerLink=/user-main-page>{{ auth.getStudentInfo()?.studentName }}</a>
+    </li>
+    <li *ngIf=auth.LoggedIn()><a class=topNav routerLink=/create-user-course>Create a New Course</a></li>
+    <li *ngIf=auth.LoggedIn()><a class=topNav routerLink="/user-course-lists">All Available Courses</a></li>
+    <li *ngIf=auth.LoggedIn()><a class=topNav routerLink="/user-course-enrollment">Enroll in a Course</a></li>
+  </ul>
+  <div class=row>
+    <div class=col-lg-3>
+      <a class=home routerLink=/home-page>Home</a>
+      <p id=studentsWorld> Students World </p>
+      <p id=mainStudents> Main Students </p>
+      <ul class=leftNav>
+        <li><a class=topLeftNav href=https://www.umkcbookstore.com target=_blank>Discover Books</a></li>
+        <li *ngIf=auth.LoggedIn()><a class=topLeftNav routerLink=/user-course-lists>Online Courses</a></li>
+        <li *ngIf=auth.LoggedIn()><a class=topLeftNav> Announcements </a></li>
+        <li *ngIf=auth.LoggedIn()><a class=topLeftNav> Video Lessons </a></li>
+        <li *ngIf=auth.LoggedIn()><a class=middleNav routerLink=/user-main-pages>Friends</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+<router-outlet></router-outlet>

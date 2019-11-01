@@ -1,0 +1,20 @@
+<body>
+<div class=container>
+  <div class=row>
+    <div class=col-lg-12>
+      <h2>Sign Up Page</h2>
+      <form (submit)=signUp()>
+        <span class=signUp>
+          <p>Enter your email address here</p>
+          <input [(ngModel)]=credentials.studentEmail class=signUp name=studentEmail type=studentEmail>
+        </span>
+        <span class=signUp>
+          <p>Enter your new password here</p>
+          <input [(ngModel)]=credentials.studentPassword class=signUp name=studentPassword type=studentPassword>
+        </span>
+        <button class=signUpButton type=submit>Click here to finish signing up</button>
+      </form>
+    </div>
+  </div>
+</div>
+</body>

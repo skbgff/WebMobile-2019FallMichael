@@ -1,0 +1,8 @@
+.span{
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+}
+.info{
+  font-size: 16px;
+}
