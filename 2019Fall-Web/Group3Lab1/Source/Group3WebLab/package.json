@@ -34,7 +34,7 @@
     "flatpickr": "^4.6.3",
     "http-errors": "^1.6.3",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.7.3",
+    "mongoose": "^5.7.5",
     "morgan": "^1.9.0",
     "passport": "^0.2.2",
     "passport-local": "^1.0.0",
