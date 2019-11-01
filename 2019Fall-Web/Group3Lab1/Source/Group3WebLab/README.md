@@ -1,1 +1,1 @@
-
+We weren't able to finish everything, but got the basics finished. We were trying to make it look better with CSS but our MongoDB stopped working so we can't see our changes, but we are trying to fix it.
