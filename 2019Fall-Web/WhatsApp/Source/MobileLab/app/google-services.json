@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "929229202223",
+    "firebase_url": "https://mobile-lab-75e15.firebaseio.com",
+    "project_id": "mobile-lab-75e15",
+    "storage_bucket": "mobile-lab-75e15.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:929229202223:android:a696f1fbec6f136b6577da",
+        "android_client_info": {
+          "package_name": "com.example.mobilelab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "929229202223-n9gktv0udhts72s4ul3d20u1b5klagqc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mobilelab",
+            "certificate_hash": "2fdc25ab79a4e20f1662b212a9a54e13f6e50854"
+          }
+        },
+        {
+          "client_id": "929229202223-4m6260il3jl7cp2mhampr0svsh1sosf4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5G4cwVlWQJ-xGqoIUFdw959l37xjxdN4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "929229202223-4m6260il3jl7cp2mhampr0svsh1sosf4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

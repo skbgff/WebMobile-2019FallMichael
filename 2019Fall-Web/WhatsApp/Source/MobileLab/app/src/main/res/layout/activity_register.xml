@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".RegisterActivity">
+
+<include
+    android:id="@+id/toolbar"
+    layout="@layout/bar_layout" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_below="@id/toolbar"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register for a new account!"
+        android:layout_marginBottom="100dp"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:layout_marginTop="10dp"
+        android:hint="Username"
+        android:textStyle="italic"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:layout_marginTop="10dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textStyle="italic"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:hint="Password"
+        android:textStyle="italic"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="create new account!"
+        android:id="@+id/registerButton"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"/>
+
+
+</LinearLayout>
+</RelativeLayout>
+
+
+

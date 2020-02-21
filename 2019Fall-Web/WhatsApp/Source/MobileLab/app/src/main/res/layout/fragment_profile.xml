@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="@drawable/start"
+    tools:context=".Fragments.ProfileFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Profile"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/pImage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:src="@mipmap/ic_launcher"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:layout_below="@+id/pImage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:id="@+id/username"
+                android:layout_marginBottom="20dp"
+                android:textSize="18sp"/>
+
+
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
